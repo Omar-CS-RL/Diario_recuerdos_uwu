@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentos en nuestra historia</title>
+    <link rel="stylesheet" href="estilos_historia.css">
+    <style>
+        .momento p {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .boton-toggle {
+            margin-top: 10px;
+            background: linear-gradient(135deg, #fbb1f9, #f9c2ff);
+            color: #5b004f;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .boton-toggle:hover {
+            background: linear-gradient(135deg, #f79ee0, #f7a3ff);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>📖 Momentos en nuestra historia</h1>
+        <p>Un recorrido por algunos momentos que hemos compartido 💖</p>
+    </header>
+
+    <main class="timeline">
+
+        <div class="momento">
+            <h2>✨ 15 de febrero – El primer día que conversamos 💖</h2>
+            <button class="boton-toggle">Mostrar texto</button>
+            <p>Yo estaba en el voluntariado de Los Luchos por ser sábado como normalmente lo hago, ya nos íbamos a ir y estuve conversando cuando de pronto entraste a la universidad y te vi llegar,
+                 yo sabía que eras parte del voluntariado porque ya te había visto un tiempo antes pero nunca habíamos hablado, bueno, lo que pasó después fue que
+                  te acercaste a nosotros junto a tu amiga y les saludamos, fue nuestra primera interacción uwu, poco después hiciste la propuesta para ir a tomar tesitos, y aceptamos, entonces pasó un 
+                  rato y fuimos por tesitos, pensé que los demás se iban a desanimar porque no tenían tiempo, pero aún así aceptaron al final y dijeron para quedarse hasta las 7pm, lo más interesante llegó
+                   después de que se fueron los demás pues pude estar a tu lado finalmente y fue cuando empecé a verte y me llamaron la atención tus ojos y manos, también empecé a interactuar directamente 
+                   contigo y eso no voy a negar que lo disfruté, honestamente me diste la impresión de ser una chica muy genial y lo más bonito de eso es que no me equivoqué en esa impresión tuya, y me alegro bastante 
+                   por haber empezado a hablar con Whatsapp aquella noche.
+                 </p>
+        </div>
+
+        <div class="momento especial">
+            <h2>💑 Agosto 2023 – ¡Nuestra primera foto juntos!</h2>
+            <button class="boton-toggle">Mostrar texto</button>
+            <p>Una sonrisa compartida, una mirada que decía más que mil palabras. Ese fue el inicio de todo lo hermoso que vivimos después.</p>
+        </div>
+
+    </main>
+
+    <footer class="pie">
+        <p>Gracias por estar en esta historia conmigo. 💕</p>
+        <a href="index.html" class="boton-regresar">Volver al inicio</a>
+    </footer>
+    <script>
+        const botones = document.querySelectorAll('.boton-toggle');
+
+        botones.forEach(boton => {
+            boton.addEventListener('click', () => {
+                const parrafo = boton.nextElementSibling;
+                const visible = parrafo.style.display === 'block';
+                parrafo.style.display = visible ? 'none' : 'block';
+                boton.textContent = visible ? 'Mostrar historia' : 'Ocultar historia';
+            });
+        });
+    </script>
+
+</body>
+</html>
