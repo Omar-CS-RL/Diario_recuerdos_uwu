@@ -52,25 +52,35 @@ body {
 
 .pie {
     text-align: center;
-    padding: 30px;
-    background-color: #ffe6f0;
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #ffe6f0 0%, #ffd6eb 100%);
     border-top: 2px solid #ff85a2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #5a0033;
 }
 
 .boton-regresar {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #ff5e8e;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #ff5e8e, #ff85a2);
     color: white;
-    border-radius: 8px;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .boton-regresar:hover {
-    background-color: #e64c78;
+    background: linear-gradient(135deg, #e64c78, #ff6fa2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
 
 /* Animación */
 @keyframes fadeIn {
