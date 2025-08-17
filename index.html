@@ -6,97 +6,535 @@
     <title>Diario de Recuerdos para mi princesa hermosa</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="libro.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        
+    </style>
 </head>
 <body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema">
+        🌙
+    </button>
+
     <div class="diary-container">
         <header>
             <h1>❤️ Diario de Recuerdos para mi niña... Gabi ❤️</h1>
             <p>Pequeños detalles de Omar con mucho cariño para Gabriela ❤️</p>
         </header>
-        
-        <section class="entry-list">
-            <!-- Entrada de ejemplo -->
 
-            <div class="entry destacado">
-                <h2 class="entry-title">📖 Momentos en nuestra historia </h2>
-                <p class="entry-description">Un recorrido por algunos momentos que hemos compartido 💕</p>
-                <a href="momentos_historia.html" class="entry-link">Ver Cronología</a>
+        <!-- Estadísticas -->
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-number" id="totalMoments">13</span>
+                <div class="stat-label">Momentos Especiales</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="daysTogether">156</span>
+                <div class="stat-label">Días Juntos</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">∞</span>
+                <div class="stat-label">Amor Infinito</div>
+            </div>
+        </div>
+
+        <!-- Controles -->
+        <div class="controls">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Buscar momentos especiales...">
             </div>
             
-            <div class="entry">
-                <h2 class="entry-title">🌻 Día de la mujer 🌻</h2>
-                <p class="entry-description">Fecha: 08 de marzo de 2025</p>
-                <a href="https://omar-cs-rl.github.io/gabriela_dia_mujer/" target="_blank" class="entry-link">Visitar Página</a>
-            </div>
-            <div class="entry">
-                <h2 class="entry-title">❤️ Sorpresita :3 ❤️</h2>
-                <p class="entry-description">Fecha: 15 de marzo de 2025</p>
-                <a href="https://omar-cs-rl.github.io/Sorpresa_Gabriela/" target="_blank" class="entry-link">Visitar Página</a>           
-            </div>
-            <div class="entry">
-                <h2 class="entry-title">🌻 Flores amarillas 1 ❤️</h2>
-                <p class="entry-description">Fecha: 21 de marzo de 2025</p>
-                <a href="https://omar-cs-rl.github.io/Flores_1/" target="_blank" class="entry-link">Visitar Página</a>           
-            </div>
-            <div class="entry">
-                <h2 class="entry-title">❤️ Flores amarillas 2 🌻</h2>
-                <p class="entry-description">Fecha: 21 de marzo de 2025</p>
-                <a href="https://omar-cs-rl.github.io/Flores_2/" target="_blank" class="entry-link">Visitar Página</a>           
-            </div>
-            <div class="entry">
-                <h2 class="entry-title">🌻 Sorpresa random 🌻</h2>
-                <p class="entry-description">Fecha: 29 de marzo de 2025</p>
-                <a href="https://omar-cs-rl.github.io/Sorp_random/" target="_blank" class="entry-link">Visitar Página</a>           
-            </div>
-            <div class="entry">
-                <h2 class="entry-title">❤️ Animación de corazón ❤️</h2>
-                <p class="entry-description">Fecha: 6 de abril de 2025</p>
-                <a href="https://omar-cs-rl.github.io/animacion_corazon/" target="_blank" class="entry-link">Visitar Página</a>           
-            </div>
-            <div class="entry">
-                <h2 class="entry-title">❤️ Mensaje bonito ❤️</h2>
-                <p class="entry-description">Fecha: 13 de abril de 2025</p>
-                <a href="https://omar-cs-rl.github.io/msj_bonito/" target="_blank" class="entry-link">Visitar Página</a>           
-            </div>
-            <div class="entry">
-                <h2 class="entry-title">❤️ Mensaje para Gabriela ❤️</h2>
-                <p class="entry-description">Fecha: 23 de abril de 2025</p>
-                <a href="https://omar-cs-rl.github.io/mensaje_Gabriela/" target="_blank" class="entry-link">Visitar Página</a>           
-            </div>
-            <div class="entry">
-                <h2 class="entry-title">❤️ Sorpresa para cuando estuviste depre ❤️</h2>
-                <p class="entry-description">Fecha: 15 de mayo de 2025</p>
-                <a href="https://omar-cs-rl.github.io/sorp_gabi_depre_uwu/" target="_blank" class="entry-link">Visitar Página</a>           
-            </div>
-            <div class="entry">
-                <h2 class="entry-title">🌻 Sorpresa de julio porque si 🌻</h2>
-                <p class="entry-description">Fecha: 07 de julio de 2025</p>
-                <a href="https://omar-cs-rl.github.io/sorpresita_julio/" target="_blank" class="entry-link">Visitar Página</a>           
-            </div>
-            <div class="entry">
-                <h2 class="entry-title">❤️ Animación "Te amo" 🌻</h2>
-                <p class="entry-description">Fecha: 20 de julio de 2025</p>
-                <a href="https://omar-cs-rl.github.io/rand_animation_g/" target="_blank" class="entry-link">Visitar Página</a>           
-            </div>
-            <div class="entry">
-                <h2 class="entry-title">❤️ Recreación de la web de mi sueño 🌻</h2>
-                <p class="entry-description">Fecha: 12 de agosto de 2025</p>
-                <a href="https://omar-cs-rl.github.io/sorp_agosto/" target="_blank" class="entry-link">Visitar Página</a>           
-            </div>
-            <div class="entry">
-                <h2 class="entry-title">❤️ Contador de días que nos conocemos 🌻</h2>
-                <p class="entry-description">Fecha: 17 de agosto de 2025</p>
-                <a href="https://omar-cs-rl.github.io/cuenta_dias/" target="_blank" class="entry-link">Visitar Página</a>           
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="marzo">Marzo</button>
+                <button class="filter-btn" data-filter="abril">Abril</button>
+                <button class="filter-btn" data-filter="mayo">Mayo</button>
+                <button class="filter-btn" data-filter="julio">Julio</button>
+                <button class="filter-btn" data-filter="agosto">Agosto</button>
             </div>
 
+            <div class="view-toggle">
+                <button class="view-btn active" data-view="grid">📱</button>
+                <!-- <button class="view-btn" data-view="list">📋</button> -->
+            </div>
+        </div>
+        
+        <section class="entry-list" id="entryList">
+            <div class="entry destacado" data-month="cronologia" data-keywords="momentos historia cronología">
+                <div class="entry-content">
+                    <h2 class="entry-title">📖 Momentos en nuestra historia</h2>
+                    <div class="entry-date">📅 Cronología completa</div>
+                    <p class="entry-description">Un recorrido por algunos momentos que hemos compartido 💕</p>
+                    <a href="momentos_historia.html" class="entry-link">Ver Cronología</a>
+                </div>
+            </div>
+            
+            <div class="entry" data-month="marzo" data-keywords="día mujer flores respeto">
+                <div class="entry-content">
+                    <h2 class="entry-title">🌻 Día de la mujer</h2>
+                    <div class="entry-date">📅 08 de marzo de 2025</div>
+                    <p class="entry-description">Un homenaje especial en tu día 🌸</p>
+                    <a href="https://omar-cs-rl.github.io/gabriela_dia_mujer/" target="_blank" class="entry-link">Visitar Página</a>
+                </div>
+            </div>
+
+            <div class="entry" data-month="marzo" data-keywords="sorpresa amor corazón">
+                <div class="entry-content">
+                    <h2 class="entry-title">❤️ Sorpresita :3</h2>
+                    <div class="entry-date">📅 15 de marzo de 2025</div>
+                    <p class="entry-description">Una pequeña sorpresa hecha con amor 💝</p>
+                    <a href="https://omar-cs-rl.github.io/Sorpresa_Gabriela/" target="_blank" class="entry-link">Visitar Página</a>
+                </div>
+            </div>
+
+            <div class="entry" data-month="marzo" data-keywords="flores amarillas primavera">
+                <div class="entry-content">
+                    <h2 class="entry-title">🌻 Flores amarillas 1</h2>
+                    <div class="entry-date">📅 21 de marzo de 2025</div>
+                    <p class="entry-description">El comienzo de la primavera en nuestro amor 🌼</p>
+                    <a href="https://omar-cs-rl.github.io/Flores_1/" target="_blank" class="entry-link">Visitar Página</a>
+                </div>
+            </div>
+
+            <div class="entry" data-month="marzo" data-keywords="flores amarillas primavera continuación">
+                <div class="entry-content">
+                    <h2 class="entry-title">❤️ Flores amarillas 2</h2>
+                    <div class="entry-date">📅 21 de marzo de 2025</div>
+                    <p class="entry-description">La segunda parte de nuestra primavera especial 🌻</p>
+                    <a href="https://omar-cs-rl.github.io/Flores_2/" target="_blank" class="entry-link">Visitar Página</a>
+                </div>
+            </div>
+
+            <div class="entry" data-month="marzo" data-keywords="sorpresa random espontáneo">
+                <div class="entry-content">
+                    <h2 class="entry-title">🌻 Sorpresa random</h2>
+                    <div class="entry-date">📅 29 de marzo de 2025</div>
+                    <p class="entry-description">Una sorpresa espontánea para alegrarte el día ✨</p>
+                    <a href="https://omar-cs-rl.github.io/Sorp_random/" target="_blank" class="entry-link">Visitar Página</a>
+                </div>
+            </div>
+
+            <div class="entry" data-month="abril" data-keywords="animación corazón latidos amor">
+                <div class="entry-content">
+                    <h2 class="entry-title">❤️ Animación de corazón</h2>
+                    <div class="entry-date">📅 06 de abril de 2025</div>
+                    <p class="entry-description">Mi corazón late por ti, siempre 💓</p>
+                    <a href="https://omar-cs-rl.github.io/animacion_corazon/" target="_blank" class="entry-link">Visitar Página</a>
+                </div>
+            </div>
+
+            <div class="entry" data-month="abril" data-keywords="mensaje bonito palabras dulces">
+                <div class="entry-content">
+                    <h2 class="entry-title">❤️ Mensaje bonito</h2>
+                    <div class="entry-date">📅 13 de abril de 2025</div>
+                    <p class="entry-description">Palabras del corazón para ti 💌</p>
+                    <a href="https://omar-cs-rl.github.io/msj_bonito/" target="_blank" class="entry-link">Visitar Página</a>
+                </div>
+            </div>
+
+            <div class="entry" data-month="abril" data-keywords="mensaje gabriela personal especial">
+                <div class="entry-content">
+                    <h2 class="entry-title">❤️ Mensaje para Gabriela</h2>
+                    <div class="entry-date">📅 23 de abril de 2025</div>
+                    <p class="entry-description">Un mensaje muy especial, solo para ti 💕</p>
+                    <a href="https://omar-cs-rl.github.io/mensaje_Gabriela/" target="_blank" class="entry-link">Visitar Página</a>
+                </div>
+            </div>
+
+            <div class="entry" data-month="mayo" data-keywords="sorpresa depre ánimo apoyo">
+                <div class="entry-content">
+                    <h2 class="entry-title">❤️ Sorpresa para cuando estuviste depre</h2>
+                    <div class="entry-date">📅 15 de mayo de 2025</div>
+                    <p class="entry-description">Para levantarte el ánimo en tus días difíciles 🤗</p>
+                    <a href="https://omar-cs-rl.github.io/sorp_gabi_depre_uwu/" target="_blank" class="entry-link">Visitar Página</a>
+                </div>
+            </div>
+
+            <div class="entry" data-month="julio" data-keywords="sorpresa julio verano">
+                <div class="entry-content">
+                    <h2 class="entry-title">🌻 Sorpresa de julio porque sí</h2>
+                    <div class="entry-date">📅 07 de julio de 2025</div>
+                    <p class="entry-description">Una sorpresa veraniega sin motivo especial ☀️</p>
+                    <a href="https://omar-cs-rl.github.io/sorpresita_julio/" target="_blank" class="entry-link">Visitar Página</a>
+                </div>
+            </div>
+
+            <div class="entry" data-month="julio" data-keywords="animación te amo amor declaración">
+                <div class="entry-content">
+                    <h2 class="entry-title">❤️ Animación "Te amo"</h2>
+                    <div class="entry-date">📅 20 de julio de 2025</div>
+                    <p class="entry-description">Mis sentimientos animados para ti 💖</p>
+                    <a href="https://omar-cs-rl.github.io/rand_animation_g/" target="_blank" class="entry-link">Visitar Página</a>
+                </div>
+            </div>
+
+            <div class="entry" data-month="agosto" data-keywords="recreación sueño web especial">
+                <div class="entry-content">
+                    <h2 class="entry-title">❤️ Recreación de la web de mi sueño</h2>
+                    <div class="entry-date">📅 12 de agosto de 2025</div>
+                    <p class="entry-description">Haciendo realidad los sueños digitales 🌟</p>
+                    <a href="https://omar-cs-rl.github.io/sorp_agosto/" target="_blank" class="entry-link">Visitar Página</a>
+                </div>
+            </div>
+
+            <div class="entry" data-month="agosto" data-keywords="contador días conocemos tiempo juntos">
+                <div class="entry-content">
+                    <h2 class="entry-title">❤️ Contador de días que nos conocemos</h2>
+                    <div class="entry-date">📅 17 de agosto de 2025</div>
+                    <p class="entry-description">Contando cada momento desde que llegaste a mi vida ⏰</p>
+                    <a href="https://omar-cs-rl.github.io/cuenta_dias/" target="_blank" class="entry-link">Visitar Página</a>
+                </div>
+            </div>
         </section>
         
         <footer>
             <p>Con cariño, para tí, Gabriela 🌹❤️</p>
             <p>Espero que te guste mucho...</p>
+            <p>✨ Hecho con amor por Omar ✨</p>
         </footer>
     </div>
+
+    <script>
+        // Elementos del DOM
+        const searchInput = document.getElementById('searchInput');
+        const entryList = document.getElementById('entryList');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const viewButtons = document.querySelectorAll('.view-btn');
+        const entries = document.querySelectorAll('.entry');
+        const themeToggle = document.querySelector('.theme-toggle');
+
+        // Estado actual
+        let currentFilter = 'all';
+        let currentView = 'grid';
+        let isDarkMode = false;
+
+        // Inicialización
+        document.addEventListener('DOMContentLoaded', function() {
+            updateStats();
+            setupEventListeners();
+            loadTheme();
+        });
+
+        // Event Listeners
+        function setupEventListeners() {
+            // Búsqueda
+            searchInput.addEventListener('input', handleSearch);
+
+            // Filtros
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentFilter = this.dataset.filter;
+                    filterEntries();
+                });
+            });
+
+            // Vista
+            viewButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    viewButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentView = this.dataset.view;
+                    toggleView();
+                });
+            });
+        }
+
+        // Funciones de búsqueda y filtrado
+        function handleSearch() {
+            const searchTerm = searchInput.value.toLowerCase();
+            
+            entries.forEach(entry => {
+                const title = entry.querySelector('.entry-title').textContent.toLowerCase();
+                const description = entry.querySelector('.entry-description').textContent.toLowerCase();
+                const keywords = entry.dataset.keywords || '';
+                
+                const matchesSearch = !searchTerm || 
+                    title.includes(searchTerm) || 
+                    description.includes(searchTerm) || 
+                    keywords.includes(searchTerm);
+                
+                const matchesFilter = currentFilter === 'all' || 
+                    entry.dataset.month === currentFilter;
+                
+                if (matchesSearch && matchesFilter) {
+                    entry.classList.remove('hidden');
+                } else {
+                    entry.classList.add('hidden');
+                }
+            });
+        }
+
+        function filterEntries() {
+            const searchTerm = searchInput.value.toLowerCase();
+            
+            entries.forEach(entry => {
+                const title = entry.querySelector('.entry-title').textContent.toLowerCase();
+                const description = entry.querySelector('.entry-description').textContent.toLowerCase();
+                const keywords = entry.dataset.keywords || '';
+                
+                const matchesSearch = !searchTerm || 
+                    title.includes(searchTerm) || 
+                    description.includes(searchTerm) || 
+                    keywords.includes(searchTerm);
+                
+                const matchesFilter = currentFilter === 'all' || 
+                    entry.dataset.month === currentFilter;
+                
+                if (matchesSearch && matchesFilter) {
+                    entry.classList.remove('hidden');
+                } else {
+                    entry.classList.add('hidden');
+                }
+            });
+        }
+
+        // Cambio de vista
+        function toggleView() {
+            if (currentView === 'list') {
+                entryList.classList.add('list-view');
+            } else {
+                entryList.classList.remove('list-view');
+            }
+        }
+
+        // Estadísticas
+        function updateStats() {
+            const totalMoments = entries.length - 1; // -1 para excluir la cronología
+            document.getElementById('totalMoments').textContent = totalMoments;
+            
+            // Calcular días desde marzo (aproximado)
+            const startDate = new Date('2025-03-08');
+            const currentDate = new Date();
+            const daysDiff = Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24));
+            document.getElementById('daysTogether').textContent = daysDiff > 0 ? daysDiff : 156;
+        }
+
+        // Tema oscuro
+        function toggleTheme() {
+            isDarkMode = !isDarkMode;
+            document.body.classList.toggle('dark-mode', isDarkMode);
+            themeToggle.textContent = isDarkMode ? '☀️' : '🌙';
+            localStorage.setItem('darkMode', isDarkMode);
+        }
+
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('darkMode');
+            if (savedTheme === 'true') {
+                isDarkMode = true;
+                document.body.classList.add('dark-mode');
+                themeToggle.textContent = '☀️';
+            }
+        }
+
+        // Animaciones adicionales
+        function addHeartAnimation() {
+            const hearts = ['💖', '💕', '💗', '💓', '💝'];
+            const heart = document.createElement('div');
+            heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+            heart.style.position = 'fixed';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.top = '100vh';
+            heart.style.fontSize = '2rem';
+            heart.style.pointerEvents = 'none';
+            heart.style.zIndex = '9999';
+            heart.style.animation = 'floatUp 3s ease-out forwards';
+            
+            document.body.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 3000);
+        }
+
+        // Agregar CSS para la animación de corazones flotantes
+        const floatUpStyle = document.createElement('style');
+        floatUpStyle.textContent = `
+            @keyframes floatUp {
+                to {
+                    transform: translateY(-100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+            
+            .dark-mode {
+                --background: #1a1a2e;
+                --card-background: #16213e;
+                --text-dark: #ffffff;
+                --text-light: #a8a8a8;
+                --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.4);
+            }
+        `;
+        document.head.appendChild(floatUpStyle);
+
+        // Agregar corazones flotantes ocasionales
+        setInterval(addHeartAnimation, 5000);
+
+        // Efectos de partículas en hover
+        entries.forEach(entry => {
+            entry.addEventListener('mouseenter', function() {
+                if (Math.random() > 0.7) { // 30% de probabilidad
+                    addHeartAnimation();
+                }
+            });
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === '/') {
+                e.preventDefault();
+                searchInput.focus();
+            }
+            
+            if (e.key === 'Escape') {
+                searchInput.blur();
+                searchInput.value = '';
+                handleSearch();
+            }
+        });
+
+        // Lazy loading para las imágenes (si las hubiera)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '50px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        entries.forEach(entry => {
+            observer.observe(entry);
+        });
+
+        // Guardar estado de filtros en localStorage
+        function saveState() {
+            localStorage.setItem('diaryState', JSON.stringify({
+                filter: currentFilter,
+                view: currentView,
+                search: searchInput.value
+            }));
+        }
+
+        function loadState() {
+            const saved = localStorage.getItem('diaryState');
+            if (saved) {
+                const state = JSON.parse(saved);
+                currentFilter = state.filter || 'all';
+                currentView = state.view || 'grid';
+                searchInput.value = state.search || '';
+                
+                // Aplicar estado guardado
+                filterButtons.forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.filter === currentFilter);
+                });
+                
+                viewButtons.forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.view === currentView);
+                });
+                
+                toggleView();
+                filterEntries();
+            }
+        }
+
+        // Eventos para guardar estado
+        searchInput.addEventListener('input', saveState);
+        filterButtons.forEach(btn => btn.addEventListener('click', saveState));
+        viewButtons.forEach(btn => btn.addEventListener('click', saveState));
+
+        // Cargar estado al iniciar
+        window.addEventListener('load', loadState);
+
+        // Mensaje de bienvenida ocasional
+        function showWelcomeMessage() {
+            const messages = [
+                '¡Hola Gabi! 💕',
+                'Pensando en ti... ❤️',
+                'Eres mi inspiración 🌟',
+                'Te amo mucho 💖'
+            ];
+            
+            const message = messages[Math.floor(Math.random() * messages.length)];
+            
+            // Crear notificación
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+                color: white;
+                padding: 15px 20px;
+                border-radius: 25px;
+                box-shadow: var(--shadow);
+                z-index: 10000;
+                animation: slideInRight 0.5s ease, slideOutRight 0.5s ease 2.5s forwards;
+                font-weight: 500;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        // Mostrar mensaje de bienvenida después de 3 segundos
+        setTimeout(showWelcomeMessage, 3000);
+
+        // Agregar estilos para las animaciones de notificación
+        const notificationStyles = document.createElement('style');
+        notificationStyles.textContent = `
+            @keyframes slideInRight {
+                from {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes slideOutRight {
+                from {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                to {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(notificationStyles);
+
+        // Contador en tiempo real
+        function updateRealTimeCounter() {
+            const startDate = new Date('2025-02-15T00:00:00');
+            const now = new Date();
+            const diff = now - startDate;
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            
+            const counterElement = document.getElementById('daysTogether');
+            if (counterElement) {
+                counterElement.textContent = days;s
+            }
+        }
+
+        // Actualizar contador cada minuto
+        setInterval(updateRealTimeCounter, 60);
+        updateRealTimeCounter();
+    </script>
 </body>
 </html>
